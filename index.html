@@ -2,13 +2,69 @@
 <html>
 <head>
 <title>Google Search Result Clone</title>
+
+<link rel="stylesheet" type="text/css" href="/css/reset.css">
+<link rel="stylesheet" type="text/css" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
 <body>
-<img src="/media/google_logo.png" alt="Google Logo" style="width:272px; height:92px;">
-<form> 
-    <label for="search-bar"></label>
-    <input type="text" id="search-bar" name="search-bar" value="Search Google or type a URL">
-</form>
+<div class="navbar-main-container ">
+    <div class="navbar-left">
+        <span>
+            <a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header" target="_blank" class="nav-link-style"> About</a>
+        </span>
+        <span>
+            <a href="https://store.google.com/us/?hl=en-US" target="_blank" class="nav-link-style">Store</a>
+        </span>
+    </div>
+    <div class=" navbar-right">
+        <span>
+            <a href="" target="_blank" class="nav-link-style">Gmail</a>
+        </span>
+        <span>
+            <a href="https://images.google.com/" target="_blank" class="nav-link-style">Images</a> 
+        </span>
+        <i class="material-icons rnav" style="opacity: .60;">apps</i>
+        <span> 
+            <img src="/media/google_avatar_icon.jpg" alt="profile photo" style="border-radius: 50%;">
+        </span>
+    </div>   
+</div>
+
+<div class="content">  
+    <div class= "logo">  
+        <img src="/media/google_logo.png" alt="Google Logo">
+    </div>
+ 
+    <div class="search-bar">
+        <form > 
+            <label for="search-input"></label>
+            <input type="text" id="search-input" name="search-input" style="border-radius: 24px;">
+        </form>
+    </div>
+    
+</div>
+
+<div class="bottom-nav-main"> 
+<div class="bottom-left-nav">
+    <a>Advertising</a>
+    <a>Business</a>
+    <a>How Search works</a>
+</div>
+<div class="bottom-right-nav">
+    <a>Privacy</a>
+    <a>Terms</a>
+    <a>Settings</a>
+</div>
+
+
+</div>
+
+
 </body>
 </html>
