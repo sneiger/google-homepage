@@ -14,14 +14,6 @@ a:hover {
     text-decoration: underline;
 }
 
-.google-button {
-    margin: 10px;
-}
-
-.button-container {
-    margin-top: 20px;
-}
-
 .top-nav-container {
     font-size: 13px;
     display: flex;
@@ -51,24 +43,47 @@ a {
 
 .content {
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
     align-items: center;
-    margin-top: 100px
+    margin-top: 100px;
+    
 }
 
-.search-bar {
-    width: 300px;
-}
-
-.search-bar input {
-    border-radius: 24px;
+.search-container {
+    max-width: 600px;
+    width: 75%;
+    margin-top: 20px;
     border: 1px solid #dfe1e5;
-    align-self: center;
-    width: 100%;
-    -webkit-appearance: none;
-    appearance: none;
-    outline: none;
-    height: auto;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+form {
+    display: contents;
+}
+
+form > img {
+    object-fit: scale-down;
+    margin: auto 5px;
+    height: 20px;
+    width: 20px;
+}
+
+
+.button-container {
+    margin: 20px 0;
+}
+
+.google-button {
+    margin: 10px;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    height: 36px;
+    min-width: 54px;
+    font-size: 14px;
 }
 
 .bottom-nav-container {
@@ -85,8 +100,13 @@ a {
     justify-content: space-between;
 }
 
-
 .bottom-nav-item > a {
     padding: 15px;
 }
 
+@media only screen and (max-width: 600px) {
+    .bottom-nav-container {
+        justify-content: center;
+        height: 60px;
+    }
+}
